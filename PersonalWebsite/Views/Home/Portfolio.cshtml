@@ -1,0 +1,210 @@
+﻿@{
+    ViewData["Title"] = "Portfolio Page";
+}
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/assets/img/portfolio-header.jpg');">
+        <div class="container position-relative d-flex flex-column align-items-center">
+
+            <h2>Portfolio</h2>
+            <ol>
+                <li>@Html.ActionLink("Home","Index","Home")</li>
+                <li>Portfolio</li>
+            </ol>
+
+        </div>
+    </div><!-- End Breadcrumbs -->
+    <!-- ======= Project Portfolio Section ======= -->
+
+    <section id="prject-list" class="section-padding">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Project Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dungeon App</td>
+                    <td scope="row">Dungeon console app</td>
+                    <td>
+                        <a href="https://github.com/DanAmbro/DungeonApp.git">Dungeon App</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Store Front</td>
+                    <td scope="row">Our mock online store</td>
+                    <td>
+                        <a href="https://github.com/DanAmbro/DungeonApp.git">Store Front</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Store Front Database</td>
+                    <td scope="row">Our store front Database</td>
+                    <td>
+                        <a href="https://github.com/DanAmbro/DungeonApp.git">Store Front Database</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>To Do API</td>
+                    <td scope="row">An on-line To Do API</td>
+                    <td>
+                        <a href="https://github.com/DanAmbro/DungeonApp.git">To Do API</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>React To Do</td>
+                    <td scope="row">Our on-line To Do List </td>
+                    <td>
+                        <a href="https://github.com/DanAmbro/DungeonApp.git">React To Do</a>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </section>
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Portfolio</h2>
+                <p>
+                    Above is the finished dungeon project that I plan to continue to add to in the future. I will also be
+                    adding my up coming projects to the table above. Presently all the links are to the dungeon app. I have also decided to include some of the food "projects" that I did in my past.
+                </p>
+            </div>
+
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-app">App</li>
+                        <li data-filter=".filter-dinner">Dinner</li>
+                        <li data-filter=".filter-dessert">Dessert</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-dinner">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Dinner 1"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-dinner">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Dinner 2"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-dinner">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Dinner 3"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-dessert">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Dessert 1"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-dessert">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Dessert 2"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-dessert">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Dessert 3"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Portfolio Section -->
+    <!-- ======= jQuery Section ======= -->
+    <article class="bg-dark p-3">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center">
+                <h4 class="text-white">Guess a number between 1 and 5</h4>
+                <div class="form-floating m-3">
+                    <input type="number" min="1" max="5" class="form-control" id="number1to5"
+                           placeholder="Number (1 - 5)" />
+                    <label for="number1to5">number between 1 and 5</label>
+                </div>
+                <div>
+                    <button onclick="guessNumber()" class="btn btn-light m-2">Feeling lucky?</button>
+                </div>
+                <p id="numberMessage" class="text-white"></p>
+            </div>
+        </div>
+    </article><!-- End jQuery Section -->
+
+
+</main><!-- End #main -->
